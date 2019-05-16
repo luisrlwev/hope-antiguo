@@ -4989,7 +4989,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: #fff !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -8204,7 +8204,7 @@ header {
 
 .pricing {
   position: relative;
-  background: #fff; }
+  background: #C9A289; }
   .pricing .icon span {
     font-size: 80px;
     line-height: 1.3;
