@@ -62,7 +62,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #343a40; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -7272,7 +7272,7 @@ body {
   font-size: 17px;
   line-height: 1.8;
   font-weight: 400;
-  color: #fff;
+  color: #000;
   position: relative; }
   body:after {
     position: fixed;
@@ -7282,7 +7282,7 @@ body {
     content: '';
     width: 400px;
     height: 600px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 0, 0, 1);
     z-index: -1;
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
@@ -7297,7 +7297,7 @@ body {
     content: '';
     width: 400px;
     height: 400px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 0, 0, 1);
     z-index: -1;
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -7335,7 +7335,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: #fff;
+  color: #000;
   font-weight: 400; }
 
 .text-primary {
@@ -8171,8 +8171,8 @@ header {
       color: #fff; }
 
 .testimony-wrap {
-  background: #fff;
-  color:#000;
+  background: rgba(102, 102, 102, 0.9);
+  color:#fff;
   display: block;
   position: relative;
   padding: 30px;
@@ -8350,7 +8350,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  background: #1b212c;
+  background: #fff;
   padding: 5em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -8390,7 +8390,7 @@ textarea.form-control {
     width: 60px;
     display: block;
     float: left;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(201, 162, 137, 1);
     border-radius: 50%;
     position: relative; }
     .ftco-footer-social li a span {
@@ -9113,5 +9113,14 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 .negro{
+  color: #000 !important;
+}
+
+.blanco{
   color: #fff !important;
+}
+
+.slide-img{
+  -webkit-animation: slide 20s linear infinite;
+  animation: slide 20s linear infinite; }
 }

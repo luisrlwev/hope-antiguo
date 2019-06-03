@@ -2237,3 +2237,145 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/* Estilos de slider Copiados */
+
+/* :: 5.0 Hero Area CSS */
+
+.hero-slides {
+    position: relative;
+    z-index: 1;
+    .owl-dots {
+        @include display-flex(flex);
+        position: absolute;
+        bottom: 30px;
+        left: 4%;
+        @media #{$breakpoint-lg} {
+            left: 1%;
+        }
+        @media #{$breakpoint-md} {
+            left: 5px;
+            @include flex-direction(column);
+        }
+        @media #{$breakpoint-xs} {
+            bottom: 100px;
+        }
+        .owl-dot {
+            @include trans-duration(300ms);
+            border: 2px solid transparent;
+            background-color: transparent;
+            display: block;
+            padding: 3px 5px;
+            color: $white-color;
+            font-size: 14px;
+            &.active,
+            &:hover,
+            &:focus {
+                color: $white-color;
+                background-color: #1b3f4c;
+                border: 2px solid $pri-color;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.single-hero-slide {
+    width: 100%;
+    height: 950px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media #{$breakpoint-lg} {
+        height: 800px;
+    }
+    @media #{$breakpoint-md} {
+        height: 750px;
+    }
+    @media #{$breakpoint-xs} {
+        height: 750px;
+    }
+    .slide-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .hero-slides-content {
+        display: inline-block;
+        padding: 60px 50px;
+        background-color: rgba(0, 0, 0, 0.63);
+        border: 2px solid $pri-color;
+        text-align: center;
+        @media #{$breakpoint-lg} {
+            padding: 40px 20px;
+        }
+        @media #{$breakpoint-md} {
+            padding: 30px 20px;
+        }
+        @media #{$breakpoint-xs} {
+            padding: 20px;
+        }
+        .line {
+            width: 90px;
+            height: 2px;
+            background-color: $pri-color;
+            margin: 0 auto 30px;
+        }
+        h2 {
+            position: relative;
+            z-index: 1;
+            font-size: 72px;
+            color: $white-color;
+            margin-bottom: 0;
+            display: inline-block;
+            @media #{$breakpoint-lg} {
+                font-size: 48px;
+            }
+            @media #{$breakpoint-md} {
+                font-size: 36px;
+            }
+            @media #{$breakpoint-xs} {
+                font-size: 30px;
+            }
+        }
+        p {
+            font-size: 14px;
+            color: $white-color;
+        }
+    }
+}
+
+.hero-slides .owl-item.active .single-hero-slide .slide-img {
+    @include animation(slide 20s linear infinite);
+}
+
+@-webkit-keyframes slide {
+    0% {
+        @include transform(scale(1));
+    }
+    50% {
+        @include transform(scale(1.2));
+    }
+    100% {
+        @include transform(scale(1));
+    }
+}
+
+@keyframes slide {
+    0% {
+        @include transform(scale(1));
+    }
+    50% {
+        @include transform(scale(1.2));
+    }
+    100% {
+        @include transform(scale(1));
+    }
+}
+
+/* Finaliza Estilos de slider Copiados */
